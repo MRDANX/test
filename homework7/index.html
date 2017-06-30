@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>作业7</title>
+	<link rel="icon" href="right.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="css/homework7.css" />
+	<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body>
+	<!-- 总体面板div -->
+	<div class="background">
+		<!-- 顶部面板 -->
+		<div class="top">
+			<!-- 导航栏 -->
+			<div class="nav">
+				<ul>
+					<li><a href="#">首页</a><span>|</span></li>
+					<li><a href="#">会员中心</a><span>|</span></li>
+					<li><a href="#">登录</a><span>|</span></li>
+					<li><a href="#">注册</a></li>
+				</ul>
+			</div>
+			<div class="nav_header"></div>
+			<!-- 个人信息面板 -->
+			<div class="info">
+				<span>小猴子的个人星空间</span>
+				<span>个人空间介绍，总是希望着，总是泯灭着。。。。。</span>
+			</div>
+			<!-- 顶部中的底部渐变条 -->
+			<div class="gradient"></div>
+		</div>
+		<!-- 中间面板 -->
+		<div class="middle">
+			<!-- 中间面板的左边部分 -->
+			<div class="left">
+				<!-- 音乐达人面板 -->
+				<div class="left_content">
+					<div class="left_top"><span>音乐达人</span></div>
+					<div class="left_center">
+						<div class="left_headpic"><img src="img/pic2.jpg" alt=""></div>
+						<div class="left_buttons">
+							<input type="button" value="个人资料" />
+							<input type="button" value="交友资料" />
+							<input type="button" value="加为好友" />
+							<input type="button" value="投他一票" />
+							<input type="button" value="给他留言" />
+							<input type="button" value="送他卡片" />
+						</div>
+					</div>
+					<div class="left_bottom"></div>
+				</div>
+				<!-- 音乐盒面板 -->
+				<div class="left_content">
+					<div class="left_top">音乐盒<a href="#">more</a></div>
+					<div class="left_center">
+						<div class="musicbox_buttons">
+							<input type="button" value="歌单一" />
+							<input type="button" value="歌单二" />
+							<input type="button" value="歌单三" />
+						</div>
+						<div class="musicbox_list" id="music_list1">
+							<ol>
+								<li>
+									<a href="#">有没有人告诉你 - 陈楚生<img src="img/earphone.png" alt="earphone"></a>
+								</li>
+								<li>
+									<a href="#">改变自己 - 王力宏<img src="img/earphone.png" alt="earphone"></a>
+								</li>
+								<li>
+									<a href="#">还不是因为爱 - 苏醒<img src="img/earphone.png" alt="earphone"></a>
+								</li>
+								<li>
+									<a href="#">西界 - 林俊杰<img src="img/earphone.png" alt="earphone"></a>
+								</li>
+								<li>
+									<a href="#">我们的歌 - 王力宏<img src="img/earphone.png" alt="earphone"></a>
+								</li>
+								<li>
+									<a href="#">如果你也听说 - 张惠妹<img src="img/earphone.png" alt="earphone"></a>
+								</li>
+								<li>
+									<a href="#">热浪 - 温岚<img src="img/earphone.png" alt="earphone"></a>
+								</li>
+								<li>
+									<a href="#">少年游 - 魏晨<img src="img/earphone.png" alt="earphone"></a>
+								</li>
+							</ol>
+						</div>
+						<div class="musicbox_list" id="music_list2" style="display:none;">
+							<ol>
+								<li>
+									<a href="#">走在冷风中 - 刘思涵<img src="img/earphone.png" alt="earphone"></a>
+								</li>
+								<li>
+									<a href="#">闹够了没有 - 赖伟峰<img src="img/earphone.png" alt="earphone"></a>
+								</li>
+								<li>
+									<a href="#">摄影艺术 - 许嵩<img src="img/earphone.png" alt="earphone"></a>
+								</li>
+								<li>
+									<a href="#">贝多芬的悲伤 - 萧风<img src="img/earphone.png" alt="earphone"></a>
+								</li>
+								<li>
+									<a href="#">情歌王 - 古巨基<img src="img/earphone.png" alt="earphone"></a>
+								</li>
+								<li>
+									<a href="#">天下无双 - 张靓颖<img src="img/earphone.png" alt="earphone"></a>
+								</li>
+								<li>
+									<a href="#">灰色空间 - 罗志祥<img src="img/earphone.png" alt="earphone"></a>
+								</li>
+								<li>
+									<a href="#">仙剑问情 - 萧人凤<img src="img/earphone.png" alt="earphone"></a>
+								</li>
+							</ol>
+						</div>
+						<div class="musicbox_list" id="music_list3" style="display:none;">
+							<ol>
+								<li>
+									<a href="#">匆匆那年 - 王菲<img src="img/earphone.png" alt="earphone"></a>
+								</li>
+								<li>
+									<a href="#">水手 - 郑智化<img src="img/earphone.png" alt="earphone"></a>
+								</li>
+								<li>
+									<a href="#">雨爱 - 杨丞琳<img src="img/earphone.png" alt="earphone"></a>
+								</li>
+								<li>
+									<a href="#">想念的季节 - 张含韵<img src="img/earphone.png" alt="earphone"></a>
+								</li>
+								<li>
+									<a href="#">漫步人生路 - 刘惜君<img src="img/earphone.png" alt="earphone"></a>
+								</li>
+								<li>
+									<a href="#">天使经过身边 - 林依晨<img src="img/earphone.png" alt="earphone"></a>
+								</li>
+								<li>
+									<a href="#">年轮 - 汪苏泷<img src="img/earphone.png" alt="earphone"></a>
+								</li>
+								<li>
+									<a href="#">不再见 - 陈学冬<img src="img/earphone.png" alt="earphone"></a>
+								</li>
+							</ol>
+						</div>
+						<div class="musicbox_bottom"><a href="#">试听全部</a></div>
+					</div>
+					<div class="left_bottom"></div>
+				</div>
+				<!-- 经纪公司面板 -->
+				<div class="left_content">
+					<div class="left_top"><span>经纪公司</span><a href="#">more</a></div>
+					<div class="left_center">
+						<div class="left_headpic" id="company_headpic"><img src="img/pic3_1.jpg" alt=""></div>
+						<div class="company_bottom">
+							<input type="button" value="<<" />
+							<span>帅哥1</span>
+							<input type="button" value=">>" />
+						</div>
+					</div>
+					<div class="left_bottom"></div>
+				</div>
+				<!-- 日历面板 -->
+				<div class="left_content" style="height:20%">
+					<div class="left_top"><span>日历</span><a href="#">more</a></div>
+					<div class="left_center">
+						<div class="calander">
+							<table style="width:100%;">
+								<tr>
+									<td colspan="7">July 2016</td>
+								</tr>
+								<tr>
+									<td>M</td>
+									<td>T</td>
+									<td>W</td>
+									<td>T</td>
+									<td>F</td>
+									<td>S</td>
+									<td>S</td>
+								</tr>
+								<tr>
+									<td colspan="5"></td>
+									<td>1</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>4</td>
+									<td>5</td>
+									<td>6</td>
+									<td>7</td>
+									<td>8</td>
+									<td>9</td>
+								</tr>
+								<tr>
+									<td>10</td>
+									<td>11</td>
+									<td>12</td>
+									<td>13</td>
+									<td>14</td>
+									<td>15</td>
+									<td>16</td>
+								</tr>
+								<tr>
+									<td>17</td>
+									<td>18</td>
+									<td>19</td>
+									<td>20</td>
+									<td>21</td>
+									<td>22</td>
+									<td>23</td>
+								</tr>
+								<tr>
+									<td>24</td>
+									<td>25</td>
+									<td>26</td>
+									<td>27</td>
+									<td>28</td>
+									<td>29</td>
+									<td>30</td>
+								</tr>
+								<tr>
+									<td>31</td>
+								</tr>
+							</table>
+							<!-- <span style="padding: 11px 0;display: block;">January 2007</span>
+							<span id="c_title">MTWTFSS</span>
+							<ul>
+								<li>1</li>
+								<li>2</li>
+								<li>3</li>
+								<li>4</li>
+								<li>5</li>
+								<li>6</li>
+								<li>7</li>
+								<li>8</li>
+								<li>9</li>
+								<li>10</li>
+								<li>11</li>
+								<li>12</li>
+								<li>13</li>
+								<li>14</li>
+								<li>15</li>
+								<li>16</li>
+								<li>17</li>
+								<li>18</li>
+								<li>19</li>
+								<li>20</li>
+								<li>21</li>
+								<li>22</li>
+								<li>23</li>
+								<li>24</li>
+								<li>25</li>
+								<li>26</li>
+								<li>27</li>
+								<li>28</li>
+								<li>29</li>
+								<li>30</li>
+								<li>31</li>
+							</ul> -->
+						</div>
+					</div>
+					<div class="left_bottom"></div>
+				</div>
+			</div>
+			<!-- 中间面板的中间部分 -->
+			<div class="center">
+				<!-- 视频面板 -->
+				<div class="center_content">
+					<div class="center_top"><span>视频</span><a href="#">more</a></div>
+					<div class="center_center">
+						<div class="video_set">
+
+							<div class="video">
+								<div class="video_cover"><img src="img/video_1.jpg" alt=""></div>
+								<div class="video_other">
+									<span>爱的初体验:233票</span>
+									<input type="button" value="投票" />
+								</div>
+							</div>
+							<div class="video">
+								<div class="video_cover"><img src="img/video_2.jpg" alt=""></div>
+								<div class="video_other">
+									<span>爱的初体验:233票</span>
+									<input type="button" value="投票" />
+								</div>
+							</div>
+							<div class="video">
+								<div class="video_cover"><img src="img/video_3.jpg" alt=""></div>
+								<div class="video_other">
+									<span>爱的初体验:233票</span>
+									<input type="button" value="投票" />
+								</div>
+							</div>
+							<div class="video">
+								<div class="video_cover"><img src="img/video_4.jpg" alt=""></div>
+								<div class="video_other">
+									<span>爱的初体验:233票</span>
+									<input type="button" value="投票" />
+								</div>
+							</div>
+							<div class="video">
+								<div class="video_cover"><img src="img/video_5.jpg" alt=""></div>
+								<div class="video_other">
+									<span>爱的初体验:233票</span>
+									<input type="button" value="投票" />
+								</div>
+							</div>
+							<div class="video">
+								<div class="video_cover"><img src="img/video_6.jpg" alt=""></div>
+								<div class="video_other">
+									<span>爱的初体验:233票</span>
+									<input type="button" value="投票" />
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<div class="center_bottom"></div>
+				</div>
+				<!-- 歌词创作面板 -->
+				<div class="center_content" style="height: 20%;">
+					<div class="center_top"><span>歌词创作</span><a href="#">more</a></div>
+					<div class="center_center">
+						<div class="lyric_left">
+							当你穿山越岭的另一边
+							<br> 我在孤独的路上没有尽头
+							<br> 一辈子有多少的来不及
+							<br> 发现已经失去
+							<br> 最重要的东西
+							<br> 恍然大悟早已远去
+							<br> 为何总是在犯错之后
+							<br>
+							<span>.....<a href="#">查看全部</a></span>
+						</div>
+						<div style="width:1px;height:100%;background-color:orange;float:left;"></div>
+						<div class="lyric_right" style="border:none">
+							当你穿山越岭的另一边
+							<br> 我在孤独的路上没有尽头
+							<br> 一辈子有多少的来不及
+							<br> 发现已经失去
+							<br> 最重要的东西
+							<br> 恍然大悟早已远去
+							<br> 为何总是在犯错之后
+							<br>
+							<span>.....<a href="#">查看全部</a></span>
+						</div>
+					</div>
+					<div class="center_bottom"></div>
+				</div>
+				<!-- 相册面板 -->
+				<div class="center_content" style="height: 20%;">
+					<div class="center_top"><span>相册</span><a href="#">more</a></div>
+					<div class="center_center">
+						<div class="album_set">
+
+							<div class="album">
+								<div class="album_cover"><img src="img/video_1.jpg" alt=""></div>
+								<div class="album_other">
+									<span>爱的初体验:233票</span>
+									<input type="button" value="投票" />
+								</div>
+							</div>
+							<div class="album">
+								<div class="album_cover"><img src="img/video_2.jpg" alt=""></div>
+								<div class="album_other">
+									<span>爱的初体验:233票</span>
+									<input type="button" value="投票" />
+								</div>
+							</div>
+							<div class="album">
+								<div class="album_cover"><img src="img/video_3.jpg" alt=""></div>
+								<div class="album_other">
+									<span>爱的初体验:233票</span>
+									<input type="button" value="投票" />
+								</div>
+							</div>
+							<div class="album">
+								<div class="album_cover"><img src="img/video_4.jpg" alt=""></div>
+								<div class="album_other">
+									<span>爱的初体验:233票</span>
+									<input type="button" value="投票" />
+								</div>
+							</div>
+							<div class="album">
+								<div class="album_cover"><img src="img/video_5.jpg" alt=""></div>
+								<div class="album_other">
+									<span>爱的初体验:233票</span>
+									<input type="button" value="投票" />
+								</div>
+							</div>
+							<div class="album">
+								<div class="album_cover"><img src="img/video_6.jpg" alt=""></div>
+								<div class="album_other">
+									<span>爱的初体验:233票</span>
+									<input type="button" value="投票" />
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="center_bottom"></div>
+				</div>
+				<!-- 心情日记面板 -->
+				<div class="center_content">
+					<div class="center_top"><span>心情日记</span><a href="#">more</a></div>
+					<div class="center_center">
+						<div class="diary_title">
+							<span>标题</span>
+							<span>日期</span>
+							<span>票数</span>
+						</div>
+						<div class="diary_content">
+							<div class="diary_detail">
+								<span>我不知道什么是什么我不知道什么是什么</span>
+								<span>2007.09.23</span>
+								<span>19票</span>
+							</div>
+							<div class="diary_detail">
+								<span>我不知道什么是什么我不知道什么是什么</span>
+								<span>2007.09.23</span>
+								<span>19票</span>
+							</div>
+							<div class="diary_detail">
+								<span>我不知道什么是什么我不知道什么是什么</span>
+								<span>2007.09.23</span>
+								<span>19票</span>
+							</div>
+							<div class="diary_detail">
+								<span>我不知道什么是什么我不知道什么是什么</span>
+								<span>2007.09.23</span>
+								<span>19票</span>
+							</div>
+							<div class="diary_detail">
+								<span>我不知道什么是什么我不知道什么是什么</span>
+								<span>2007.09.23</span>
+								<span>19票</span>
+							</div>
+							<div class="diary_detail">
+								<span>我不知道什么是什么我不知道什么是什么</span>
+								<span>2007.09.23</span>
+								<span>19票</span>
+							</div>
+							<div class="diary_detail">
+								<span>我不知道什么是什么我不知道什么是什么</span>
+								<span>2007.09.23</span>
+								<span>19票</span>
+							</div>
+						</div>
+					</div>
+					<div class="center_bottom"></div>
+				</div>
+			</div>
+			<!-- 中间面板的右边部分 -->
+			<div class="right">
+				<!-- 访问记录面板 -->
+				<div class="right_content" style="height:20%">
+					<div class="right_top"><span>访问记录</span><a href="#">more</a></div>
+					<div class="right_center">
+						<div class="interview_records">
+							<div>
+								<img src="img/dot.png" alt="dot"> <span>好友数量</span> <span>961</span>
+							</div>
+							<div>
+								<img src="img/dot.png" alt="dot"> <span>累计投票</span> <span>45678</span>
+							</div>
+							<div>
+								<img src="img/dot.png" alt="dot"> <span>本日投票</span> <span>250</span>
+							</div>
+							<div>
+								<img src="img/dot.png" alt="dot"> <span>总访问量</span> <span>11531</span>
+							</div>
+							<div>
+								<img src="img/dot.png" alt="dot"> <span>本日访问</span> <span>10000</span>
+							</div>
+						</div>
+					</div>
+					<div class="right_bottom"></div>
+				</div>
+				<!-- 留言面板 -->
+				<div class="right_content" style="height:20%">
+					<div class="right_top"><span>留言</span><a href="#">more</a></div>
+					<div class="right_center">
+						<div class="message" name="message1">
+							<div>
+								<img src="img/dot.png" alt="dot"> <span id="visitor1">一毛</span>对<span name="myself">玩具</span>说:<span>我不知道你说了什么或什么。。。</span>
+							</div>
+							<div>
+								<img src="img/dot.png" alt="dot"> <span id="visitor2">二毛</span>对<span name="myself">玩具</span>说:<span>我不知道你说了什么或什么。。。</span>
+							</div>
+							<div>
+								<img src="img/dot.png" alt="dot"> <span id="visitor3">三毛</span>对<span name="myself">玩具</span>说:<span>我不知道你说了什么或什么。。。</span>
+							</div>
+							<div>
+								<img src="img/dot.png" alt="dot"> <span id="visitor4">四毛</span>对<span name="myself">玩具</span>说:<span>我不知道你说了什么或什么。。。</span>
+							</div>
+						</div>
+						<div class="message" name="message2" style="display:none;">
+							<div>
+								<img src="img/dot.png" alt="dot"> <span id="visitor5">五毛</span>对<span name="myself">玩具</span>说:<span>我不知道你说了什么或什么。。。</span>
+							</div>
+							<div>
+								<img src="img/dot.png" alt="dot"> <span id="visitor6">六毛</span>对<span name="myself">玩具</span>说:<span>我不知道你说了什么或什么。。。</span>
+							</div>
+							<div>
+								<img src="img/dot.png" alt="dot"> <span id="visitor7">七毛</span>对<span name="myself">玩具</span>说:<span>我不知道你说了什么或什么。。。</span>
+							</div>
+							<div>
+								<img src="img/dot.png" alt="dot"> <span id="visitor8">八毛</span>对<span name="myself">玩具</span>说:<span>我不知道你说了什么或什么。。。</span>
+							</div>
+						</div>
+						<div class="message_btns">
+							<input type="button" name="message_left" value="上一页" disabled="true" />
+							<input type="button" name="message_right" value="下一页" />
+						</div>
+					</div>
+					<div class="right_bottom"></div>
+				</div>
+				<!-- 好友面板 -->
+				<div class="right_content">
+					<div class="right_top"><span>好友</span><a href="#">more</a></div>
+					<div class="right_center" style="overflow-y:hidden">
+						<div class="friend_set">
+							<div class="friend">
+								<img src="img/friend_pic1.jpg" alt="friend_pic" />
+								<span id="friend_name1">玩具熊的卡</span><span id="friend_intro1">这样一个人...</span>
+							</div>
+							<div class="friend">
+								<img src="img/friend_pic2.jpg" alt="friend_pic" />
+								<span id="friend_name2">玩具熊的卡</span><span id="friend_intro2">这样一个人...</span>
+							</div>
+							<div class="friend">
+								<img src="img/friend_pic3.jpg" alt="friend_pic" />
+								<span id="friend_name3">玩具熊的卡</span><span id="friend_intro3">这样一个人...</span>
+							</div>
+							<div class="friend">
+								<img src="img/friend_pic4.jpg" alt="friend_pic" />
+								<span id="friend_name4">玩具熊的卡</span><span id="friend_intro4">这样一个人...</span>
+							</div>
+							<div class="friend">
+								<img src="img/friend_pic5.jpg" alt="friend_pic" />
+								<span id="friend_name5">玩具熊的卡</span><span id="friend_intro5">这样一个人...</span>
+							</div>
+							<div class="friend">
+								<img src="img/friend_pic6.jpg" alt="friend_pic" />
+								<span id="friend_name6">玩具熊的卡</span><span id="friend_intro6">这样一个人...</span>
+							</div>
+							<div class="friend">
+								<img src="img/friend_pic7.jpg" alt="friend_pic" />
+								<span id="friend_name7">玩具熊的卡</span><span id="friend_intro7">这样一个人...</span>
+							</div>
+							<div class="friend">
+								<img src="img/friend_pic8.jpg" alt="friend_pic" />
+								<span id="friend_name8">玩具熊的卡</span><span id="friend_intro8">这样一个人...</span>
+							</div>
+						</div>
+					</div>
+					<div class="right_bottom"></div>
+				</div>
+				<!-- 偶像面板 -->
+				<div class="right_content">
+					<div class="right_top"><span>偶像</span><a href="#">more</a></div>
+					<div class="right_center">
+						<div class="idol_headpic" id="idol_headpic"><img src="img/pic4_1.jpg" alt=""></div>
+						<div class="idol_bottom">
+							<input type="button" value="<<" />
+							<span>帅哥1</span>
+							<input type="button" value=">>" />
+						</div>
+					</div>
+					<div class="right_bottom"></div>
+				</div>
+			</div>
+		</div>
+		<!-- 底部面板 -->
+		<div class="bottom">
+			<!-- 底部导航栏 -->
+			<div class="footer">
+				<ul>
+					<li><a href="#">新手上路</a></li><span>|</span>
+					<li><a href="#">关于我们</a></li><span>|</span>
+					<li><a href="#">服务条例</a></li><span>|</span>
+					<li><a href="#">服务公告</a></li><span>|</span>
+					<li><a href="#">行销合作</a></li><span>|</span>
+					<li><a href="#">广告刊登</a></li><span>|</span>
+					<li><a href="#">隐私政策</a></li><span>|</span>
+					<li><a href="#">客服中心</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- 返回顶部按钮 -->
+	<div class="back-to-top"></div>
+</body>
+</html>
