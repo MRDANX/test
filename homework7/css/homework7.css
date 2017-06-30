@@ -1,0 +1,542 @@
+* {
+    position: relative;
+}
+body {
+    margin: 0;
+    height: 100%;
+    background-image: url("../img/bg.jpg");
+}
+.background {
+    width: 913.438px;
+    height: 1696.310px;
+    margin: auto;
+    background: url("../img/left.png") 0 0 repeat-y, url("../img/right.png") 100% 0 repeat-y, url("../img/top.png") 20% 0 repeat-x, url("../img/bottom.png") 20% 20% repeat;
+}
+.middle{
+    width: 91%;
+    height: 82%;
+    margin: auto;
+}
+.top {
+    width: 91%;
+    height: 11%;
+    margin: auto;
+    background: url("../img/monkey.png") 10px 20px no-repeat;
+    background-size: 50%;
+}
+.left,.right {
+    width: 25%;
+    height: 100%;
+    float: left;
+}
+.center {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.bottom {
+    width: 91%;
+    height: 7%;
+    margin: auto;
+    clear: both;
+}
+.left_content, .right_content, .center_content {
+    width: 90%;
+    height: 23%;
+    margin: 20px auto;
+    margin-top: 5px;
+}
+.nav_header {
+    float: right;
+    width: 20px;
+    height: 30px;
+    background-color: orange;
+    position: relative;
+    top: 5px;
+    margin-right: 5px;
+    border-radius: 5px 0 0 5px;
+}
+.nav {
+    float: right;
+    position: relative;
+    top: 5px;
+    right: 1px;
+    height: 30px;
+    width: 300px;
+    background-color: orange;
+}
+.nav ul, .footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 6px 0px;
+    position: relative;
+    float: right;
+}
+.nav ul li {
+    float: left;
+    margin: 0 8px;
+}
+.nav ul li a, .footer ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-family: SimHei;
+}
+.nav ul li span {
+    padding: 0;
+    padding-left: 11px;
+    font-weight: bold;
+}
+.info {
+    position: relative;
+    top: 60px;
+    left: 255px;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 400px;
+    height: 91px;
+    color: #8d495e;
+    border-radius: 15px;
+    text-align: center;
+}
+.info span {
+    display: inline-block;
+}
+.info span:first-child{
+    font-size: 32px;
+    font-family: YouYuan;
+    font-weight: bold;
+    top: 5px;
+}
+.info span:last-child{
+    font-size: 16px;
+    top: 25px;
+    font-family: "Microsoft YaHei";
+}
+.gradient {
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    bottom: 5px;
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(253, 187, 90, 0.3), rgba(253, 187, 90, 0.5));
+}
+.left_top, .center_top, .right_top {
+    background: linear-gradient(rgba(255, 180, 104, 1), rgba(255, 255, 255, 0.4), rgba(255, 180, 104, 1));
+    width: 100%;
+    height: 10%;
+    color: #a0290b;
+    font-size: 17px;
+    font-family: 'Microsoft YaHei';
+    border-radius: 5px;
+    padding-top: 5px;
+}
+.left_top a, .center_top a, .right_top a {
+    color: #a0290b;
+    text-decoration: none;
+    font-size: 17px;
+    float: right;
+    padding-top: 1px;
+}
+.left_top::before, .center_top::before, .right_top::before {
+    content: url("../img/arrow.png");
+    display: inline-block;
+    padding-top: 2px;
+    float: left;
+    margin-left: 5px;
+}
+.left_center, .center_center, .right_center {
+    height: 82%;
+    width: 100%;
+    background: radial-gradient(circle, rgba(254, 213, 157, 1) 46%, rgba(255, 255, 255, 0.5));
+    border-radius: 5px;
+}
+.center_center {
+    overflow: hidden;
+}
+.left_headpic, .idol_headpic {
+    height: 77%;
+    text-align: center;
+    padding-top: 13px;
+}
+.idol_headpic img, .left_headpic img {
+    width: 80%;
+}
+.left_buttons {
+    text-align: center;
+    height: 20%;
+}
+
+/* 按钮通用样式 */
+
+.company_bottom input, .left_buttons input, .musicbox_buttons input, .video_other input, .album_other input, .idol_bottom input {
+    background: radial-gradient(rgba(192, 192, 192, 0.5), rgba(255, 255, 255, 0.7));
+    border: 0;
+    outline: none;
+}
+.left_buttons input {
+    height: 18px;
+    border-radius: 7px;
+    width: 56px;
+    padding: 1px 2px;
+    margin-bottom: 4px;
+    margin-left: -2px;
+    margin-right: -2px;
+    font-size: 12px;
+}
+
+/* 按钮悬浮通用样式 */
+
+.left_buttons input:hover, .musicbox_buttons input:hover, .video_other input:hover, .album_other input:hover {
+    background: -webkit-linear-gradient(rgba(255, 152, 48, 0.6), rgba(255, 255, 255, 0.8) 100%);
+    background: -o-linear-gradient(rgba(255, 152, 48, 0.6), rgba(255, 255, 255, 0.8) 100%);
+    background: linear-gradient(rgba(255, 152, 48, 0.6), rgba(255, 255, 255, 0.8) 100%);
+    cursor: pointer;
+}
+
+/*按钮点击效果*/
+
+.left_buttons input:active, .video_other input:active, .album_other input:active {
+    left: -1px;
+    top: -1px;
+}
+.musicbox_buttons {
+    height: 10%;
+    text-align: center;
+}
+.musicbox_buttons input {
+    height: 20px;
+    border-radius: 0 0 5px 5px;
+    margin-left: -2px;
+    margin-right: -2px;
+}
+.musicbox_list {
+    height: 80%;
+    margin: 0;
+}
+.musicbox_list ol {
+    padding: 0;
+    padding-left: 21px;
+    padding-right: 10px;
+    line-height: 25px;
+    margin: 0;
+}
+.musicbox_list ol li {
+    font-size: 76%;
+}
+.musicbox_list img {
+    width: 10%;
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+    border: 0;
+}
+.musicbox_list ol li a {
+    text-decoration: none;
+    padding-bottom: 0px;
+    border-bottom: 1px dashed black;
+    display: inline-block;
+    width: 100%;
+}
+.musicbox_bottom {
+    height: 6%;
+    font-size: 13px;
+    float: right;
+    position: relative;
+    top: 9px;
+    right: 5px;
+}
+.company_bottom, .idol_bottom {
+    height: 15%;
+    margin-top: 12px;
+    text-align: center;
+}
+.company_bottom input, .idol_bottom input {
+    background-image: url("../img/arrow_button.png");
+    height: 30px;
+    width: 62px;
+    color: orange;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.company_bottom input:nth-child(1), .idol_bottom input:nth-child(1) {
+    background-position: 0 0;
+}
+.company_bottom input:nth-child(3), .idol_bottom input:nth-child(3) {
+    background-position: -345px 0;
+}
+.company_bottom span, .idol_bottom span {
+    font-size: 18px;
+    vertical-align: middle;
+}
+.company_bottom input:nth-child(1):hover, .idol_bottom input:nth-child(1):hover {
+    background-position: -68px 0;
+}
+.company_bottom input:nth-child(3):hover, .idol_bottom input:nth-child(3):hover {
+    background-position: -277px 0;
+}
+.company_bottom input:nth-child(1):active, .idol_bottom input:nth-child(1):active {
+    background-position: -136px 0;
+}
+.company_bottom input:nth-child(3):active, .idol_bottom input:nth-child(3):active {
+    background-position: -209px 0;
+}
+.calander {
+    width: 90%;
+    height: 80%;
+    margin: auto;
+    border: 7px solid #ffb974;
+    border-radius: 0 0 10px 10px;
+    border-top: 0;
+    color: #9c2917;
+    font-weight: bold;
+    text-align: center;
+}
+.calander table td:hover{
+    background: linear-gradient(to right,rgba(255,255,255,0.5),rgba(135, 226, 238,0.8),rgba(255,255,255,0.5));
+    cursor: default;
+    border-radius: 50%;
+}
+.calander table td::selection{
+    background-color: transparent;
+}
+.calander table tr:first-child td:hover,.calander table tr:nth-child(2) td:hover,.calander table tr:nth-child(3) td:first-child{
+    background-image:none;
+}
+.video_set, .album_set {
+    width: 200%;
+    height: 100%;
+    padding-left: 8px;
+}
+.video, .album {
+    width: 16%;
+    height: 100%;
+    float: left;
+    text-align: center;
+}
+
+/* 相框鼠标悬浮样式 */
+
+.video:hover, .album:hover, .friend:hover {
+    background-color: #ff9935;
+    border-radius: 5px;
+}
+.video_cover, .album_cover {
+    height: 80%;
+}
+.video_cover img, .album_cover img {
+    width: 70%;
+    border: 3px solid white;
+    border-radius: 3px;
+    vertical-align: middle;
+    margin-top: 4px;
+}
+/*.video_cover img:hover, .album_cover img:hover{
+    transform: rotate(360deg);
+    transition: transform 0.9s ease-in-out;
+}*/
+.video_other, .album_other {
+    height: 20%;
+}
+.video_other span, .album_other span {
+    display: inline-block;
+    font-size: 0.84em;
+}
+.video_other input, .album_other input {
+    border-radius: 10px;
+    width: 60px;
+}
+.lyric_left, .lyric_right {
+    width: 45%;
+    height: 100%;
+    float: left;
+    font-size: 14px;
+    line-height: 2;
+    margin: 0 9px;
+}
+.lyric_left a, .lyric_right a {
+    float: right;
+}
+.lyric_left span, .lyric_right span {
+    display: inline-block;
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    bottom: 0;
+}
+.diary_title {
+    border-radius: 5px 5px 0 0;
+    height: 10%;
+    background-color: rgba(255, 196, 138, 0.8);
+    word-spacing: 110px;
+    text-align: center;
+}
+.diary_title span {
+    color: #a82014;
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: middle;
+}
+.diary_detail {
+    border-bottom: 1px dotted black;
+    height: 10%;
+    font-size: 14px;
+    width: 90%;
+    margin: auto;
+    margin-top: 11px;
+}
+.diary_detail span:nth-child(1) {
+    display: inline-block;
+    width: 147px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.diary_detail span:nth-child(3) {
+    float: right;
+    margin-right: 5px;
+}
+.interview_records {
+    width: 90%;
+    height: 100%;
+    margin: auto;
+}
+.interview_records div {
+    height: 10%;
+    border-bottom: 1px dotted black;
+    word-spacing: 11px;
+    color: #cc111c;
+    padding-top: 20px;
+}
+.interview_records div img, .message div img {
+    width: 10%;
+    vertical-align: top;
+}
+.message div img{
+    float: left;
+    margin-right: 4px;
+}
+
+/*留言面板中间部分内容样式*/
+
+.message {
+    width: 90%;
+    height: 80%;
+    margin: auto;
+    font-size: 13px;
+    padding-top: 10px;
+}
+.message div {
+    height: 27%;
+    margin-left: 5px;
+}
+.message_btns {
+    height: 20%;
+    margin: 5px 0;
+}
+.message_btns input {
+    background: url("../img/message_btn.png") no-repeat;
+    border: 0;
+    outline: none;
+    width: 44%;
+    height: 60%;
+    color: orange;
+    padding: 0;
+    cursor:pointer;
+}
+.message_btns input[name="message_left"] {
+    background-position: 9px 0;
+    text-indent: 15px;
+    float: left;
+}
+.message_btns input[name="message_right"] {
+    background-position: -142px 0;
+    text-indent: -15px;
+    float: right;
+}
+.message_btns input[name="message_left"]:active, .message_btns input[name="message_right"]:active {
+    top: -1px;
+}
+#visitor, #myself {
+    color: #91331a;
+    padding: 0 2px;
+}
+.friend_set {
+    height: 200%;
+}
+.friend {
+    margin: 0;
+    width: 100%;
+    height: 12%;
+    margin-bottom: 3px;
+}
+.friend img {
+    width: 25%;
+    border: 4px solid white;
+    border-radius: 3px;
+    float: left;
+    margin: 3px 5px;
+}
+.friend span {
+    vertical-align: middle;
+    display: inline-block;
+}
+#friend_name {
+    color: #91331a;
+    font-size: 17px;
+    font-weight: bold;
+}
+.left_bottom, .center_bottom, .right_bottom {
+    height: 8%;
+    border-radius: 0 0 5px 5px;
+    background: -webkit-linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 196, 134, 0.5), rgba(255, 171, 86, 0.5), rgba(255, 153, 60, 0.5));
+    background: -o-linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 196, 134, 0.5), rgba(255, 171, 86, 0.5), rgba(255, 153, 60, 0.5));
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 196, 134, 0.5), rgba(255, 171, 86, 0.8), rgba(255, 153, 60, 0.8));
+    ;
+}
+.bottom {
+    background: -webkit-linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.4), rgba(255, 160, 66, 0.5), rgba(253, 153, 59, 0.8));
+    background: -o-linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.4), rgba(255, 160, 66, 0.5), rgba(253, 153, 59, 0.8));
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.4), rgba(255, 160, 66, 0.5), rgba(253, 153, 59, 0.8));
+}
+
+/*底部样式*/
+
+.footer {
+    width: 100%;
+    margin: auto;
+}
+.footer ul {
+    padding: 40px 0;
+    float: none;
+    width: 95%;
+    text-align: center;
+    margin: auto;
+}
+.footer ul li {
+    float: left;
+    margin: 0 5px;
+}
+.footer ul span {
+    float: left;
+    margin: 0 9px;
+}
+
+/*返回顶部div样式*/
+
+.back-to-top {
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+    width: 100px;
+    height: 30px;
+    background: url("../img/back_to_top.png") no-repeat;
+    background-size: 100%;
+    background-position: 0 0;
+    display: none;
+}
+.back-to-top:hover {
+    cursor: pointer;
+    background-position: 0 -36px;
+}
+.back-to-top:active {
+    background-position: 0 -72px;
+}
